@@ -8,7 +8,6 @@ class Students{
         this.phone = phone;
     }
 
-    // GETTERS
     get getId (){
         return this.id;
     }
@@ -27,8 +26,6 @@ class Students{
     get getPhone(){
         return this.phone;
     }
-
-    // SETTERS
     set setId (id){
         this.id = id;
     }
@@ -47,6 +44,10 @@ class Students{
     set setPhone(phone){
         this.phone = phone;
     }
+
+
+
 };
+
 
 export default Students;

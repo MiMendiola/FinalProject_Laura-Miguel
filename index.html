@@ -23,7 +23,14 @@
     <!-- FORM LOGIN -->
     <div class="modal">
         <div id="formLogin" class="modal_box">
-            <form action="">Login</form>
+            <form action="">
+                <input type="text" placeholder="Username *">
+                <input type="password" placeholder="Password *">
+
+                <input type="checkbox" id="see" onChange="showsOrHide_Pass()" />
+                <label class="text">Mostrar contraseña</label>
+                <button type="submit">Login</button>
+            </form>
         </div>
     </div>
 

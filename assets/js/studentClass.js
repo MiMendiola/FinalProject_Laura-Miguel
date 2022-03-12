@@ -44,10 +44,6 @@ class Students{
     set setPhone(phone){
         this.phone = phone;
     }
-
-
-
 };
-
 
 export default Students;

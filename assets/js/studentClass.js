@@ -6,6 +6,7 @@ class Students{
         this.email = email;
         this.adress = adress;
         this.phone = phone;
+        this.enrolled_courses= new Set();
     }
 
     get getId (){
@@ -43,6 +44,9 @@ class Students{
     }
     set setPhone(phone){
         this.phone = phone;
+    }
+    enrollCourse(course){
+        this.enrolled_courses.add(course);
     }
 };
 

@@ -1,3 +1,11 @@
+// IMPORTS
+import Students from "./studentClass.js";
+import Career from "./careerClass.js";
+import ESL from "./eslClass.js";
+import {ESLMap} from "./programs.js";
+import {CareerMap} from "./programs.js";
+
+
 // VARIABLES
 let btns = document.getElementsByTagName("button");
 
@@ -8,8 +16,9 @@ let blockForm = document.getElementsByTagName("form");
 
 // Do modal display none
 for(let i=0;i<modals.length;i++){
-    modals[i].style.display = "none";
+    // modals[i].style.display = "none";
 }
+
 
 // BUTTONS LOGIN AND REGISTER PART
 // When user clicks on login show the login form and hide the register form
@@ -58,14 +67,21 @@ inputBox[0].addEventListener("keydown", (event) =>{
 
 // Shows the password in the label
 let showsOrHide_Pass = () =>{
+    let label = document.getElementsByClassName("text")[0];
     let check = document.getElementById("see");
 
     if (check.checked == true) {
         inputBox[1].type = "text";
+        label.innerHTML = "hide password"
+
     }else{
         inputBox[1].type = "password";
+        label.innerHTML = "show password"
     }
 }
+inputBox[2].addEventListener("change", ()=>{
+    showsOrHide_Pass();
+})
 
 // For not submit if the inputs are empty
 blockForm[0].addEventListener("submit", (event) =>{
@@ -75,8 +91,9 @@ blockForm[0].addEventListener("submit", (event) =>{
     }
 });
 
+const career1= new Career(1,"Laura",26,"laura@mail.com","algun lugar de Canada","101010",1,CareerMap.get("WD"),"HTML");
 
-
+console.log(career1.gpaAverage());
 
 
 

@@ -1,14 +1,14 @@
 import Students from "./studentClass.js";
-import {ESLMap} from "./programs.js";
+import {CareerMap} from "./programs.js";
 
-class ESL extends Students {
-    
+class Career extends Students {
+
     constructor(id,name,age,email,adress,phone,level,program,currentCourse){
         super(id,name,age,email,adress,phone);
         this.level = level;
-        if(!ESLMap.get(program.id))
+        if(!CareerMap.get(program.id))
         {
-            throw new Error("This program doesn't exist in ESL! :P");
+            throw new Error("This program doesn't exist in Career! :P");
         }
         this.program=program;
         const courseIndex=program.Courses.indexOf(currentCourse);
@@ -44,21 +44,23 @@ class ESL extends Students {
     }
 }
 
-/* 
-const coursesEsl = new Map([["ESL","ESL"],["Tofel","Tofel"],["Ielts","Ielts"]]);
+const career1= new Career(1,"Laura",26,"laura@mail.com","algun lugar de Canada","101010",1,CareerMap.get("WD"),"HTML");
+
+career1.settingGpa(90);
+
+console.log(career1);
+
+career1.settingCurrentCourse("CSS");
+career1.settingGpa(100);
+
+career1.settingCurrentCourse("JS");
+career1.settingGpa(80);
+
+console.log(career1.gpaAverage());
+/* const coursesCareers = new Map([["WD","Web Development"],["UI","User Interface"],["UX","User experience"],["HM","Hospitality Management"],["DM","Digital Marketing"]]);
+ */
 
 
 
- let ESL1 = new ESL ("9090","Jose","27","test@gmail.com","ADRESS1","567899876","A1",6);
- ESL1.enroll_courses.set("ESL", ESL1.gpa);
- ESL1.enroll_courses.set("Ielts", 7);
 
- console.log(ESL1.gettingGpa());
 
- console.log(ESL1.add_course(courses,8,"Tofel"));
-
- console.log(ESL1.enroll_courses.values());
-
- console.log(ESL1.gpaAverage());
-
- //export default ESL; */

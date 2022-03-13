@@ -16,7 +16,7 @@ let blockForm = document.getElementsByTagName("form");
 
 // Do modal display none
 for(let i=0;i<modals.length;i++){
-    // modals[i].style.display = "none";
+    modals[i].style.display = "none";
 }
 
 

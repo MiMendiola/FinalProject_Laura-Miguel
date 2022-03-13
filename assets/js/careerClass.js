@@ -57,7 +57,5 @@ career1.settingCurrentCourse("JS");
 career1.settingGpa(80);
 
 console.log(career1.gpaAverage());
-/* const coursesCareers = new Map([["WD","Web Development"],["UI","User Interface"],["UX","User experience"],["HM","Hospitality Management"],["DM","Digital Marketing"]]);
- */
 
 export default Career;

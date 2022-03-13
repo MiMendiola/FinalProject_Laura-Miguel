@@ -22,7 +22,7 @@ const eslClasses = {
   ielts: new Program("Ielts", "Ielts",["Reading","Writing","Listening"]),
 };
 
-//Estos maps son los que se mostraran en el select dinamico de ESL/Career
+// These maps are the ones that will be showns in the dinamic selection of ESL/Career
 export const ESLMap = new Map([
   [eslClasses.esl.Id, eslClasses.esl],
   [eslClasses.toefl.Id, eslClasses.toefl],
@@ -35,5 +35,3 @@ export const CareerMap = new Map([
   [careers.hospitalityManagement.Id, careers.hospitalityManagement],
   [careers.digitalMarketing.Id, careers.digitalMarketing],
 ]);
-//TOEFL
-//const ProgramsEsl = new Map([["ESL","ESL"],["Tofel","Tofel"],["Ielts","Ielts"]]);

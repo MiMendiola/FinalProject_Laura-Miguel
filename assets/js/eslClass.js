@@ -44,22 +44,4 @@ class ESL extends Students {
     }
 }
 
-/* 
-const coursesEsl = new Map([["ESL","ESL"],["Tofel","Tofel"],["Ielts","Ielts"]]);
-
-
-
-let ESL1 = new ESL ("9090","Jose","27","test@gmail.com","ADRESS1","567899876","A1",6);
-ESL1.enroll_courses.set("ESL", ESL1.gpa);
-ESL1.enroll_courses.set("Ielts", 7);
-
-console.log(ESL1.gettingGpa());
-
-console.log(ESL1.add_course(courses,8,"Tofel"));
-
-console.log(ESL1.enroll_courses.values());
-
-console.log(ESL1.gpaAverage());
-*/
-
 export default ESL; 

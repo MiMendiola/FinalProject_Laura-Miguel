@@ -91,13 +91,3 @@ blockForm[0].addEventListener("submit", (event) =>{
     }
 });
 
-const career1= new Career(1,"Laura",26,"laura@mail.com","algun lugar de Canada","101010",1,CareerMap.get("WD"),"HTML");
-
-console.log(career1.gpaAverage());
-
-
-
-
-
-
-

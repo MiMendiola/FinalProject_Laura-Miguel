@@ -89,7 +89,7 @@ inputBox[0].addEventListener("keydown", (event) => {
   }
 });
 
-// EventListener that only let you type leters, delete if you have a mistake and delete
+// EventListener that only let you type letters, delete if you have a mistake and delete
 for (let i = 0; i < inputBox.length; i++) {
   if (i == 0 || i == 3 || i == 4) {
     inputBox[i].addEventListener("keydown", (event) => {
@@ -153,9 +153,12 @@ function radioChange(e) {
       });
     } else {
       CareerMap.forEach((program, key) => {
-          options += `<option value=${program.Id}>${program.Name}</option>`;
+        options += `<option value=${program.Id}>${program.Name}</option>`;
         });
     }
+    //options = <option value= '"+program.id+"'>"+program.name+"</option>;
+    //("<option value='"+key+"'>"+state+"</option>")
+    // $(`<option value='${key}'>${state}</option>`)
   
     select.innerHTML = options;
   

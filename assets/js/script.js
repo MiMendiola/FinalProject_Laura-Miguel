@@ -18,6 +18,9 @@ let controlReg = document.getElementsByClassName("controlRegister");
 let blockForm = document.getElementsByTagName("form");
 
 // Do modal and the courses you can select with display none
+for(let i=0;i<modals.length;i++){
+  modals[i].style.display = "none";
+}
 
 // BUTTONS LOGIN AND REGISTER PART
 // When user clicks on login show the login form and hide the register form
@@ -140,8 +143,6 @@ inputBox[2].addEventListener("change", () => {
 
 // When you click on the radio button ESL the ESL programs will be display
 function radioChange(e) {
-  
-
     let courseSelected = document.getElementsByClassName("selectCourse")[0];
     courseSelected.removeChild(courseSelected.lastChild);
     const select = document.createElement("select");
